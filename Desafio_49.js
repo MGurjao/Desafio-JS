@@ -8,6 +8,6 @@ function mudarUltimaLetra(array) {
     }
     return resultado;
 }
-const nomes = ["joão","maria","josé"];
-const resultado = mudarUltimaLetra(nomes);
-console.log(resultado); 
+const nomes = ["joão","maria","josé"]
+const resultado = mudarUltimaLetra(nomes)
+console.log(resultado)

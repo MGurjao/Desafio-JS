@@ -12,7 +12,7 @@ function mudarPrimeiraUltimaLetra(array) {
 }
 const nomes = ["joão","maria","josé"];
 const resultado = mudarPrimeiraUltimaLetra(nomes);
-console.log(resultado); 
+console.log(resultado)
 
 
 

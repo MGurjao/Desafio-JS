@@ -2,7 +2,7 @@ const cursos = ["JavaScript", "Java","Python","Node","ReactNTV"]
 
 function filtrarCaracteres(array) {
     return array.filter(function(str) {
-        return str.length === 8;
+        return str.length === 8
     })
 
 }
