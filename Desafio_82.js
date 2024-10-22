@@ -1,12 +1,10 @@
-const cursos = ["Java", "JavaScri","SpringBt","ReactNtv"]
+const cursos = ["JavaScript", "Java","Python","Node","ReactNTV"]
 
-function filtrarStringsComOitoCaracteres(array) {
+function filtrarCaracteres(array) {
     return array.filter(function(str) {
-        return str.length === 8
-    });
+        return str.length === 8;
+    })
+
 }
 
-// Exemplo de uso
-
-const resultado = filtrarStringsComOitoCaracteres(cursos);
-console.log(resultado)
+console.log(filtrarCaracteres(cursos))
