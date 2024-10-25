@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insira as notas abaixo:</h1>
+    <input type="number" id="nota1">
+    <input type="number" id="nota2">
+    <input type="number" id="nota3">
+    <input type="number" id="nota4">
+    <button onclick="calcularMedia()">Calcular media</button>
+    <div id="resultado"></div>
+
+    <script>
+
+        function calcularMedia(){
+            let nota1 = parseFloat(document.getElementById("nota1").value)
+            let nota2 = parseFloat(document.getElementById("nota2").value)
+            let nota3 = parseFloat(document.getElementById("nota3").value)
+            let nota4 = parseFloat(document.getElementById("nota4").value)
+
+            let resultadoDiv = document.getElementById("resultado");
+            
+            const soma = nota1 + nota2 + nota3 + nota4
+            const media = soma / 4
+
+
+            if (media >= 7){
+                resultadoDiv.innerText = `${media} Aluno Aprovado`;
+
+            }else{
+                resultadoDiv.innerText = `${media} Aluno Reprovado`
+            }
+        }
+
+
+    </script>
+</body>
+</html>

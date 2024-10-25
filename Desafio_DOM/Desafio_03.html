@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+</head>
+<body>
+    <h1>Informe o numero abaixo:</h1>
+
+    <input type="number" id="numero">
+    <button onclick="verificarNumero()">Verificar número</button>
+    <div id="resultado"></div>
+
+    <script>
+        // Gera o número aleatório uma vez, no início do jogo
+        const numeroSorteado = Math.floor(Math.random() * 100) + 1;
+
+        function verificarNumero() {
+            let numero = parseInt(document.getElementById("numero").value);
+            let resultadoDiv = document.getElementById("resultado");
+
+            if (numero < numeroSorteado) {
+                resultadoDiv.innerText = `O número sorteado é maior que o informado.`;
+            } else if (numero > numeroSorteado) {
+                resultadoDiv.innerText = `O número sorteado é menor que o informado.`;
+            } else {
+                resultadoDiv.innerText = `Parabéns! Você acertou o número!`;
+            }
+        }
+    </script>
+</body>
+</html>
